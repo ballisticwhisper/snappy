@@ -36,6 +36,8 @@
 #include <string>
 #include <vector>
 
+#include <BaseTsd.h>
+typedef SSIZE_T ssize_t;
 
 namespace snappy {
 
