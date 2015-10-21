@@ -36,9 +36,6 @@
 #include <string>
 #include <vector>
 
-#include <BaseTsd.h>
-typedef SSIZE_T ssize_t;
-
 namespace snappy {
 
 using internal::COPY_1_BYTE_OFFSET;
