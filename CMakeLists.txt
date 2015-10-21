@@ -45,3 +45,9 @@ configure_file(snappy-stubs-public.h.in
     @ONLY)
 
 add_library(snappy ${SRCS})
+
+if ( MSVC )
+    set_target_properties(snappy PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/../../../libs)
+    set_target_properties(snappy PROPERTIES ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${PROJECT_BINARY_DIR}/../../../libs)
+    set_target_properties(snappy PROPERTIES ARCHIVE_OUTPUT_DIRECTORY_RELEASE ${PROJECT_BINARY_DIR}/../../../libs)
+endif ( MSVC )
